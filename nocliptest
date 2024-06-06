@@ -1,0 +1,230 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+--[[
+local colors = {
+	
+    SchemeColor = Color3.fromRGB(150, 72, 148),
+	
+	Background = Color3.fromRGB(15,15,15),
+	
+    Header = Color3.fromRGB(15,15,15),
+	
+    TextColor = Color3.fromRGB(255,255,255),
+
+    ElementColor = Color3.fromRGB(20, 20, 20)
+}
+]]
+
+local Window = Library.CreateLib("Rain Hub", "RJTheme8")
+
+
+local Tab = Window:NewTab("Teleports")
+
+
+local Section = Tab:NewSection("Teleports (need some time)")
+
+
+Section:NewButton("Teleport To Winter Street", "Teleport", function()
+
+  local TeleportService = game:GetService("TeleportService")
+ 
+local level1Id = 17416074811 -- Change "0" to the place ID
+
+ 
+game.Players.PlayerAdded:connect(function(player)
+    TeleportService:Teleport(level1Id, player)
+end)
+end)
+
+Section:NewButton("Idk what this", "Teleport", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-350.815369, 2.99999928, -11.9251842, -0.129977837, -9.5801326e-08, -0.991516888, 1.37855558e-08, 1, -9.84281172e-08, 0.991516888, -2.64620859e-08, -0.129977837)
+end)
+
+--
+
+Section:NewButton("Teleport To Endless", "Teleport", function()
+
+  local TeleportService = game:GetService("TeleportService")
+ 
+local level1Id = 17415686139 -- Change "0" to the place ID
+ 
+game.Players.PlayerAdded:connect(function(player)
+    TeleportService:Teleport(level1Id, player)
+end)
+end)
+
+--
+
+Section:NewButton("Teleport To Hardcore", "Teleport", function()
+
+  local TeleportService = game:GetService("TeleportService")
+ 
+local level1Id = 17397865665 -- Change "0" to the place ID
+ 
+game.Players.PlayerAdded:connect(function(player)
+    TeleportService:Teleport(level1Id, player)
+end)
+end)
+
+Section:NewButton("Teleport To Fight Club", "Teleport", function()
+
+  local TeleportService = game:GetService("TeleportService")
+ 
+local level1Id = 17500542475 -- Change "0" to the place ID
+ 
+game.Players.PlayerAdded:connect(function(player)
+    TeleportService:Teleport(level1Id, player)
+end)
+end)
+
+--
+
+local Tab = Window:NewTab("Destroy")
+
+local Section = Tab:NewSection("Destroy Doors")
+
+Section:NewButton("Destroy doors", "Teleport", function()
+  game.workspace.Doors.ProxodSnowStreetMODE:Destroy()
+  game.workspace.Doors.ProxodVEVENT:Destroy()
+  game.workspace.Doors.ProxodVHARDMODE:Destroy()
+  game.workspace.Doors.ProxodVNUCLEARMODE:Destroy()
+  game.workspace.Doors.ProxodVendMODE:Destroy()
+end)
+
+--
+
+local Tab = Window:NewTab("Universal")
+
+local Section = Tab:NewSection("Universal functions")
+
+Section:NewButton("Fly", "Fly", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+Section:NewButton("Noclip", "Noclip", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Noclip/main/Noclip"))()
+end)
+
+--
+
+local Tab = Window:NewTab("Lobby")
+
+local Section = Tab:NewSection("Functions")
+
+local Section = Tab:NewSection("Give units")
+
+Section:NewButton("Give admin", "units", function()
+game.ReplicatedStorage.Units.Admin.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Archangel", "units", function()
+game.ReplicatedStorage.Units.Archangel.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Miner", "units", function()
+game.ReplicatedStorage.Units.Miner.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Rocketer", "units", function()
+game.ReplicatedStorage.Units.Rocketer.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give EshkereJoker", "units", function()
+game.ReplicatedStorage.Units.EshkereJoker.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Grisha", "units", function()
+game.ReplicatedStorage.Units.Grisha.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Chibik", "units", function()
+game.ReplicatedStorage.Units.Chibik.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Artist", "units", function()
+game.ReplicatedStorage.Units.Artist.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Juggernaut", "units", function()
+game.ReplicatedStorage.Units.Juggernaut.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Puncher", "units", function()
+game.ReplicatedStorage.Units.Puncher.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Minigunner", "units", function()
+game.ReplicatedStorage.Units.Minigunner.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Mage", "units", function()
+game.ReplicatedStorage.Units.Mage.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Killer", "units", function()
+game.ReplicatedStorage.Units.Killer.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Priest", "units", function()
+game.ReplicatedStorage.Units.Priest.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Puncher", "units", function()
+game.ReplicatedStorage.Units.Puncher.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Rifler", "units", function()
+game.ReplicatedStorage.Units.Rifler.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+Section:NewButton("Give Shotgunner", "units", function()
+game.ReplicatedStorage.Units.Shotgunner.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+end)
+
+--
+
+local Tab = Window:NewTab("Visual")
+
+local Section = Tab:NewSection("Visual functions (ONLY FOR YOU!)")
+
+Section:NewTextBox("Wins", "Visual function", function(txt)
+	game.Players.LocalPlayer.leaderstats.Wins.Value = txt
+end)
+
+Section:NewTextBox("Cash", "Visual function", function(txt)
+	game.Players.LocalPlayer.leaderstats.Cash.Value = txt
+end)
+
+Section:NewTextBox("EventValue", "Visual function", function(txt)
+	game.Players.LocalPlayer.leaderstats.EventValue.Value = txt
+end)
+
+local Section = Tab:NewSection("ESP")
+
+Section:NewTextBox("Chams", "Visual function", function(txt)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Chams/main/Chams"))()
+end)
+
+--
+
+local Tab = Window:NewTab("In game functions")
+
+local Section = Tab:NewSection("functions")
+
+Section:NewButton("units 0 $", "its work in game, not lobby", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/Giver0/main/0giver"))()
+
+end)
+
+Section:NewButton("Destroy path", "You can place on path", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RainbowDoom/DestroyPath1/main/Path1Destroy?token=GHSAT0AAAAAACTF32RZOUTDGKFANBO2TOWSZTARIEQ"))()
+end)
+
+--
+
+
+local Tab = Window:NewTab("Social network")
+
+		local Section = Tab:NewSection("Discord server : https://discord.gg/Rq48d2A9VJ")
