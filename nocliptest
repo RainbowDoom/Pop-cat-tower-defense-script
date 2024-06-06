@@ -130,8 +130,8 @@ Section:NewButton("Give Rocketer", "units", function()
 game.ReplicatedStorage.Units.Rocketer.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
 end)
 
-Section:NewButton("Give EshkereJoker", "units", function()
-game.ReplicatedStorage.Units.EshkereJoker.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
+Section:NewButton("Give EshekereJoker", "units", function()
+game.ReplicatedStorage.Units.EshekereJoker.Parent = game.Players.LocalPlayer.PlayerGui.InventoryUI.MainFrm.Inventory.UnitsList
 end)
 
 Section:NewButton("Give Grisha", "units", function()
